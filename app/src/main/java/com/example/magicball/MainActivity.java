@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private ImageButton Ball;
     private TextView respuesta;
-    private String [] respuestaArray ={"No way","ask my mom", "Tal vez"};
+    private String [] respuestaArray ={"Paola bigotitos","Angelo Gordito", "los 2 cochinitos"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //Referencia la imagen
         Ball= findViewById(R.id.btn);
-        //referencia tecto
-        respuesta = findViewById(R.id.respuesta);
+        //referencia texto
+        respuesta = findViewById(R.id.respuestavista);
 
         //proceso
         Ball.setOnClickListener(this);

@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/nubes"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Conoce tu futuro"
-        android:textColor="#fd4f58"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
         android:layout_margin="40dp"
-         />
+        android:text="Conoce tu futuro"
+        android:textColor="#234d20"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"/>
 
     <EditText
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="24sp"
-        android:hint="ESCRIBE TU MENSAJE"
+        android:hint="Consulte"
         android:inputType="textShortMessage"
-        />
+        android:textSize="24sp" />
+
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="241dp"
+        android:id="@+id/btn"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
-        android:="@+id/btn"
-        android:contentDescription=""
-        android:src="@drawable/soccer" />
+        android:layout_margin="30dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        android:src="@drawable/monitobalon"
+        android:visibility="visible" />
 
     <TextView
-        android:="@+id/respuestavista"
+        android:id="@+id/respuestavista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="60dp"
         android:text="..."
         android:textColor="#fd4f58"
         android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_margin="60dp"
-        />
+        android:textStyle="bold" />
+
 
 </LinearLayout>
