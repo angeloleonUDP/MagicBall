@@ -13,18 +13,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
-        android:text="Conoce tu futuro"
-        android:textColor="#234d20"
-        android:textSize="30sp"
+        android:layout_margin="30dp"
+        android:text="¿Quieres conocer tu futuro?"
+        android:textColor="#e30613"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="¡Pregunta al monito y su balón! "
+        android:textColor="#34677a"
+        android:textSize="26sp"
         android:textStyle="bold|italic"/>
 
     <EditText
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="40dp"
         android:layout_gravity="center"
-        android:hint="Consulte"
+        android:hint="Escribe aquí!"
         android:inputType="textShortMessage"
         android:textSize="24sp" />
 
@@ -37,7 +47,7 @@
         android:layout_margin="30dp"
         android:background="@null"
         android:scaleType="fitStart"
-        android:src="@drawable/monitobalon"
+        android:src="@drawable/monobalon"
         android:visibility="visible" />
 
     <TextView
@@ -48,8 +58,15 @@
         android:layout_margin="60dp"
         android:text="..."
         android:textColor="#fd4f58"
-        android:textSize="26sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="200dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/logoudp"
+        />
 </LinearLayout>
